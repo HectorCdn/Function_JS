@@ -40,14 +40,72 @@ console.log(estMajuscule("Hello"));
 function maxDeuxNombres(a, b) {
 	return a, b;
 }
-console.log(maxDeuxNombres(5, 10)); // Résultat attendu : 10
+console.log(maxDeuxNombres(5, 10));
 
 // Exercice 7
 
+
+
 // Exercice 8
+
+
 
 // Exercice 9
 
+
+
 // Exercice 10
 
+
+
 // Exercice 11
+
+
+
+// Exercice 12
+
+
+
+// Exercice 13
+
+
+
+// Exercice 14
+
+
+
+// Exercice 15
+
+
+
+// Exercice 16
+
+
+
+// Exercice 17
+
+
+
+// Exercice 18
+
+
+
+// Exercice 19
+
+
+
+// Exercice 20
+
+
+
+// Exercice 21
+
+
+
+// Exercice 22
+
+
+
+// Exercice 23
+
+
