@@ -106,6 +106,32 @@ console.log(maxDeuxNombres(5, 10));
 
 
 
-// Exercice 23
+// Exercice BONUS (calculatrice)
 
+let pn = Number(prompt("Quel est votre premier nombre ?"));
+let dn = Number(prompt("Quel est votre deuxième nombre ?"));
+let cc = prompt("Voulez-vous + / - * ");
+let re = 0;
 
+function calculatrice(pn, dn, cc) {
+
+  if (cc == "+") {
+    re = pn + dn;
+    console.log(`Vous avez additionné vos deux nombres. Le résultat est ${re}`);
+  } else if (cc == "-") {
+    re = pn - dn;
+    console.log(`Vous avez soustrait vos deux nombres. Le résultat est ${re}`);
+  } else if (cc == "/") {
+    re = pn / dn;
+    console.log(`Vous avez divisé vos deux nombres. Le résultat est ${re}`);
+  } else if (cc == "*") {
+    re = pn * dn;
+    console.log(`Vous avez multiplié vos deux nombres. Le résultat est ${re}`);
+  } else {
+    console.log("Opérateur non valide");
+  }
+
+  return re;
+}
+
+calculatrice(pn, dn, cc);
