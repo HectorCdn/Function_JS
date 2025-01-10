@@ -33,19 +33,25 @@
 			<button id="3" class="green">Vert</button>
 		</main>
 		<script>
-			const red = document.querySelector(".red")
-			const blue = document.querySelector(".blue")
-			const green = document.querySelector(".green")
+			const red = document.querySelector(".red");
+			const blue = document.querySelector(".blue");
+			const green = document.querySelector(".green");
 
-			red.addEventListener("click",() => {
-			document.body.style.background = "red"
-			})
-            blue.addEventListener("click",() => {
-			document.body.style.background = "blue"
-			})
-            green.addEventListener("click",() => {
-			document.body.style.background = "green"
-			})
+			red.addEventListener("click", () => {
+				document.body.classList.add("red");
+                document.body.classList.remove("green");
+				document.body.classList.remove("blue");
+			});
+			blue.addEventListener("click", () => {
+				document.body.classList.add("blue");
+                document.body.classList.remove("green");
+				document.body.classList.remove("red");
+			});
+			green.addEventListener("click", () => {
+				document.body.classList.add("green");
+                document.body.classList.remove("red");
+				document.body.classList.remove("blue");
+			});
 		</script>
 	</body>
 </html>
