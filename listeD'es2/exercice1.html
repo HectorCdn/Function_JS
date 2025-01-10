@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 1</title>
+		<style>
+			button > * {
+				display: none;
+			}
+
+			button::after {
+				content: "********";
+			}
+		</style>
+	</head>
+	<body>
+		<p id="text">The secret password is</p>
+		<button>
+			<span id="secret">Xari#2102</span>
+		</button>
+
+		<script>
+			const secret = document.getElementById("secret");
+			console.log(secret.textContent);
+	</body>
+</html>

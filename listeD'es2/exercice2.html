@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 2</title>
+		<style>
+			p {
+				margin-block: 8px;
+				font-size: 1.1rem;
+			}
+
+			span {
+				font-weight: 900;
+				color: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h1>Code Lyoko</h1>
+				<p>On ira on saura sauver <span id="secret1">?</span></p>
+				<p>Se donner <span id="secret2">?</span> de tout effacer</p>
+				<p>On ira on saura sauver notre existence</p>
+				<p>Pour refaire <span id="secret3">?</span></p>
+				<p>Code Lyoko tout reprogrammer</p>
+				<p>Code Lyoko <span id="secret4">?</span></p>
+				<p>Code Lyoko <span id="secret5">?</span></p>
+				<p>Code Lyoko un monde sans danger</p>
+			</section>
+		</main>
+		<script>
+			const secret1 = document.getElementById("secret1");
+            const secret2 = document.getElementById("secret2");
+            const secret3 = document.getElementById("secret3");
+            const secret4 = document.getElementById("secret4");
+            const secret5 = document.getElementById("secret5");
+
+            secret1.textContent = "notre existance"
+            secret2.textContent = "une chance"
+            secret3.textContent = "un monde sans danger"
+            secret4.textContent = "un monde sans danger"
+            secret5.textContent = "tous reprogrammer"
+
+		</script>
+	</body>
+</html>

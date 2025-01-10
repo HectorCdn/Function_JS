@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 3</title>
+		<style>
+			main {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				align-items: center;
+				gap: 0 12px;
+			}
+
+			svg circle,
+			svg polygon,
+			svg path {
+				stroke: black;
+				fill: transparent;
+				stroke-width: 5;
+				stroke-linejoin: round;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+				<circle id="circle" cx="50" cy="50" r="45" />
+			</svg>
+			<svg viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
+				<polygon id="triangle" points="50 15, 90 90, 10 90" />
+			</svg>
+			<svg viewBox="0 -10 200 200" xmlns="http://www.w3.org/2000/svg">
+				<polygon
+					id="star"
+					points="100,0,129.38926261462365,59.54915028125263,195.10565162951536,69.09830056250526,147.55282581475768,115.45084971874736,158.77852522924732,180.90169943749473,100,150,41.2214747707527,180.90169943749476,52.447174185242325,115.45084971874738,4.894348370484636,69.09830056250527,70.61073738537632,59.549150281252636"
+					style="stroke-width: 10"
+				/>
+			</svg>
+			<svg
+				viewBox="-10 0 580 560"
+				xml:space="preserve"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g>
+					<path
+						id="umbrella"
+						d="M294.202,61.183V48.759c0-9.18-7.439-16.619-16.619-16.619c-9.18,0-16.619,7.439-16.619,16.619v12.424   C122.217,68.187,10.839,162.279,0,280.646c13.491-9.683,33.959-15.864,56.882-15.864c35.673,0,65.396,14.96,72.121,34.81h2.958   c6.896-19.721,36.53-34.551,72.046-34.551c22.991,0,43.466,6.236,56.957,15.966v166.668c0,23.216-18.891,42.105-42.105,42.105   c-23.215,0-42.106-18.89-42.106-42.105c0-9.18-7.439-16.619-16.619-16.619c-9.18,0-16.619,7.439-16.619,16.619   c0,41.548,33.803,75.352,75.351,75.352c41.548,0,75.337-33.804,75.337-75.352V280.735c13.484-9.724,33.952-15.953,56.93-15.953   c35.673,0,65.396,14.96,72.121,34.81h2.958c6.895-19.721,36.529-34.551,72.046-34.551c22.937,0,43.418,6.188,56.909,15.885   C544.477,162.428,433.045,68.201,294.202,61.183z"
+						style="stroke-width: 20"
+					/>
+				</g>
+			</svg>
+		</main>
+		<script>
+			
+			
+			
+
+            function changerCouleur() {
+                const circle = document.getElementById("circle")
+                const triangle = document.getElementById("triangle")
+                const star = document.getElementById("star")
+		    	const umbrella = document.getElementById("umbrella")
+
+                circle.style.backgroundColor = "green";
+                triangle.style.backgroundColor = "red"
+                star.style.backgroundColor = "yellow"
+                umbrella.style.backgroundColor = "blue"
+            }
+ 
+		</script>
+	</body>
+</html>
